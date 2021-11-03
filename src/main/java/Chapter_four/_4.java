@@ -60,11 +60,6 @@ class Benz_Car_Factory implements CarFactory{
 
 
 
-
-
-
-
-
 //main
 public class _4 {
     public static void main(String[] args) {
