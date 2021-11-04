@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <className>Chapter_four._6.TxtFactory</className>
+
+    <!--通过修改配置文件实现
+    <className>Chapter_four._6.DataFactory</className>
+    <className>Chapter_four._6.ExcelFactory</className>
+    -->
+</config>

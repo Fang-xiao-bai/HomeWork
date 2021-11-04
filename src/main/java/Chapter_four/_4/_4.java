@@ -1,4 +1,4 @@
-package Chapter_four;
+package Chapter_four._4;
 /*
  * @Time  :      2021/11/02 18:04
  * @Author:      方小白
@@ -41,7 +41,6 @@ interface CarFactory{
 
 //ConcreteFactory
 class BMW_Car_Factory implements CarFactory{
-
     @Override
     public Car createCar() {
         Car car = new BMW_Car();
@@ -50,7 +49,6 @@ class BMW_Car_Factory implements CarFactory{
 }
 
 class Benz_Car_Factory implements CarFactory{
-
     @Override
     public Car createCar() {
         Car car = new Benz_Car();
@@ -64,11 +62,12 @@ class Benz_Car_Factory implements CarFactory{
 public class _4 {
     public static void main(String[] args) {
         CarFactory carFactory1 = new BMW_Car_Factory();      //Factory
-        Car car1 = new BMW_Car();                            //Product
+        Car car1 = carFactory1.createCar();                  //Product
         car1.describe();                                     //method
 
         CarFactory carFactory2 = new Benz_Car_Factory();
-        Car car2 = new Benz_Car();
+        Car car2 = carFactory2.createCar();
         car2.describe();
     }
 }
+
