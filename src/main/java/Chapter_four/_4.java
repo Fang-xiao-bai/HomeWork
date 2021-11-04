@@ -70,5 +70,6 @@ public class _4 {
         CarFactory carFactory2 = new Benz_Car_Factory();
         Car car2 = new Benz_Car();
         car2.describe();
+        //for test
     }
 }
